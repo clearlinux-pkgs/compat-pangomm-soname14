@@ -4,7 +4,7 @@
 #
 Name     : compat-pangomm-soname14
 Version  : 2.42.1
-Release  : 12
+Release  : 13
 URL      : https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.1.tar.xz
 Source0  : https://download.gnome.org/sources/pangomm/2.42/pangomm-2.42.1.tar.xz
 Summary  : C++ binding for Pango, not installed
@@ -81,7 +81,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1611165759
+export SOURCE_DATE_EPOCH=1611165956
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -101,7 +101,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1611165759
+export SOURCE_DATE_EPOCH=1611165956
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/compat-pangomm-soname14
 cp %{_builddir}/pangomm-2.42.1/COPYING %{buildroot}/usr/share/package-licenses/compat-pangomm-soname14/cf756914ec51f52f9c121be247bfda232dc6afd2
